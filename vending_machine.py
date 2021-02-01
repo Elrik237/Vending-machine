@@ -105,7 +105,7 @@ class ManagerInterface:
     def leftover_goods(self):
         session = self.storage_service.create_session()
         for item in session.query(ListOfSnacks.id, ListOfSnacks.title, ListOfSnacks.quantity):
-            print(item.id, item.title, item.quantity)
+            print(item.id, item.title+'\n', 'На остатке: '+str(item.quantity)+'шт')
         VendingMachine('admin').starting()
 
     def add_snacks(self):
