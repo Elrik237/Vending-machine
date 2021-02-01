@@ -236,3 +236,9 @@ fabric.properties
 .idea/codestream.xml
 
 # End of https://www.toptal.com/developers/gitignore/api/pycharm
+.idea/vcs.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/modules.xml
+.idea/Vending-machine.iml
+.idea/misc.xml
+list_of_snacks.db
