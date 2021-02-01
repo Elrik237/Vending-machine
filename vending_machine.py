@@ -1,4 +1,5 @@
 import os.path
+import requests
 from parsing import Parser
 from storage_service import StorageService
 from model_snacks import ListOfSnacks
@@ -97,7 +98,10 @@ class ManagerInterface:
         self.storage_service = StorageService()
 
     def fill_the_machine(self):
-        pars = Parser()
+        print('Введитте ссылку на страницу')
+        url = input()
+        url = url.strip()
+        pars = Parser(url)
         pars.parse()
         print('Магазин наполнен!')
         VendingMachine('admin').starting()

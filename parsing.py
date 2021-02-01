@@ -5,10 +5,10 @@ from model_snacks import ListOfSnacks
 
 
 class Parser:
-    def __init__(self):
+    def __init__(self, url):
         self.storage_service = StorageService()
 
-        self.URL = 'https://kdvonline.ru/catalog/vafli-11'
+        self.URL = url
         self.HEADERS = {
             'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4400.8 Safari/537.36',
             'accept': '*/*'
