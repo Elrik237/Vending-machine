@@ -1,5 +1,4 @@
 import os.path
-import requests
 from parsing import Parser
 from storage_service import StorageService
 from model_snacks import ListOfSnacks
